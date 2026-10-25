@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lisa & Manuel, 28.08.2027</title>
   <meta name="description" content="Hochzeit von Lisa und Manuel am 28.08.2027 in Osnabrück">
+  <meta name="robots" content="noindex, nofollow, noarchive">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -151,6 +152,7 @@
       padding-bottom: 1.25rem;
       border-bottom: 1px solid var(--sand-dunkel);
     }
+    .programm li.ohne-zeit { grid-template-columns: 1fr; }
     .programm time { font-weight: 500; color: var(--mint-dunkel); }
     .programm strong { font-weight: 500; display: block; }
     .programm small { color: var(--text-leise); }
@@ -200,6 +202,11 @@
       font-size: 0.85rem;
       color: var(--text-leise);
     }
+
+    .button-zweit { background: transparent; color: var(--mint-dunkel); border: 1px solid var(--mint-dunkel); margin-left: 0.5rem; }
+    .button-zweit:hover, .button-zweit:focus-visible { background: var(--mint-dunkel); color: var(--weiss); }
+    .infos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; text-align: left; margin-top: 2rem; }
+    .infos h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
 
     /* Mobil */
     @media (max-width: 600px) {
@@ -252,11 +259,12 @@
   <section id="trauung" class="abschnitt-hell">
     <p class="tag-titel">Freie Trauung</p>
     <h2>Samstag, 28. August 2027</h2>
-    <p>Die freie Trauung findet um 14:00 Uhr im Garten bei uns zu Hause statt. Kinder sind bei der Zeremonie herzlich willkommen.</p>
+    <p>Die freie Trauung findet um 14:00 Uhr im bestuhlten Garten bei uns zu Hause statt. Wetterbedingt kann es kurzfristig zu Abweichungen kommen.</p>
     <address class="adresse">
-      Rohrbecker Weg 15<br>
-      Holzhausen
+      Ohrbecker Weg 15<br>
+      49124 Georgsmarienhütte
     </address>
+    <a class="button button-zweit" href="https://www.google.com/maps/dir/?api=1&amp;destination=Ohrbecker%20Weg%2015%2C%2049124%20Georgsmarienh%C3%BCtte" target="_blank" rel="noopener">Route zur Trauung</a>
   </section>
 
   <section id="programm">
@@ -267,21 +275,20 @@
         <time>14:00</time>
         <div>
           <strong>Freie Trauung im Garten</strong>
-          <small>Dauer etwa eine Stunde</small>
         </div>
       </li>
       <li>
-        <time>ca. 15:00</time>
+        <time>15:00</time>
         <div>
           <strong>Sektempfang im Garten</strong>
-          <small>Zeit zum Anstoßen und Wiedersehen</small>
+          <small>Zeit zum Anstoßen und Wiedersehen, dazu ein kleiner Snack</small>
         </div>
       </li>
       <li>
-        <time>danach</time>
+        <time>17:30</time>
         <div>
-          <strong>Gemeinsame Fahrt zur Partylocation</strong>
-          <small>Die Hochzeitsgesellschaft fährt gemeinsam weiter</small>
+          <strong>Empfang an der Partylocation Hof Bröcker</strong>
+          <small>Ankunft der Hochzeitsgesellschaft</small>
         </div>
       </li>
       <li>
@@ -302,7 +309,8 @@
       Auf dem Hauerlande 2<br>
       49082 Osnabrück
     </address>
-    <p>Viele von euch reisen von weiter weg an. Wenn ihr Fragen zur Anreise oder zu Übernachtungen habt, meldet euch gerne bei uns. Die Handynummern teilen wir bald mit.</p>
+    <a class="button button-zweit" href="https://www.google.com/maps/dir/?api=1&amp;destination=Hof%20Br%C3%B6cker%2C%20Auf%20dem%20Hauerlande%202%2C%2049082%20Osnabr%C3%BCck" target="_blank" rel="noopener">Route zum Hof Bröcker</a>
+    <p>Viele von euch reisen von weiter weg an. Wenn ihr Fragen zur Anreise oder zu Übernachtungen habt, meldet euch gerne bei uns.</p>
   </section>
 
   <section id="fotos">
@@ -314,10 +322,29 @@
     </div>
   </section>
 
+  <section id="gutzuwissen">
+    <p class="tag-titel">Gut zu wissen</p>
+    <h2>Kleiderordnung und Hinweise</h2>
+    <div class="infos">
+      <div>
+        <h3>Kleidung</h3>
+        <p>Modern-elegant: schick, aber bequem.</p>
+      </div>
+      <div>
+        <h3>Shuttle in der Nacht</h3>
+        <p>Für die Heimfahrt in der Nacht gibt es einen Shuttle. Die Plätze sind begrenzt und reichen nicht für alle. Bitte plant eure Rückfahrt entsprechend.</p>
+      </div>
+      <div>
+        <h3>Kinder</h3>
+        <p>Kinder sind willkommen, wenn es keine andere Möglichkeit gibt. Eigene Räume oder eine Betreuung gibt es nicht. Sprecht uns gerne an, wir finden gemeinsam eine Lösung.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="rueckmeldung" class="abschnitt-hell">
     <p class="tag-titel">Rückmeldung</p>
     <h2>Wer ist dabei?</h2>
-    <p>Bitte gebt uns über das Formular Bescheid, ob ihr dabei seid und welche Wünsche ihr habt.</p>
+    <p>Bitte gebt uns über das Formular Bescheid, ob ihr dabei seid und welche Wünsche ihr habt. Rückmeldung bitte bis zum 30.03.2027.</p>
     <a class="button" id="rsvp" href="https://forms.cloud.microsoft/e/yxuHUFBr0Q?origin=lprLink" target="_blank" rel="noopener">Zur Rückmeldung</a>
     <p class="hinweis">Die standesamtliche Trauung findet am 23.07.2027 um 11:00 Uhr am Badekarren auf Norderney mit anschließender Feier im Familienkreis statt.</p>
   </section>
@@ -325,7 +352,13 @@
   <section id="kontakt">
     <p class="tag-titel">Trauzeugen</p>
     <h2>Fragen?</h2>
-    <p>Trauzeugen sind Fabian und Lisa. Ihre Handynummern folgen in Kürze.</p>
+    <p>Trauzeugen sind Fabian und Lisa. Die Handynummern sind auf der Einladungskarte zu finden.</p>
+  </section>
+
+  <section id="save-the-date">
+    <p class="tag-titel">Erinnerung</p>
+    <h2>Save the Date</h2>
+    <img src="bilder/save-the-date.jpg" alt="Save the Date Karte von Lisa und Manuel mit den Terminen" style="max-width: 560px; width: 100%; margin: 2rem auto 0; border-radius: 4px;">
   </section>
 
   <footer>
